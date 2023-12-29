@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>演習10-3 ,学籍番号:M22W0049 </title>
+	<style>
+		table {
+			border : 1px solid gray;
+			border-collapse: collapse;
+		}
+		td,th {
+						border: 1px solid gray;
+						min-width: 10em;
+					}
+		th {
+			background-color : lightgray;
+		}
+		span {
+			display : inline-block;
+			min-width   : 10em;
+		}
+	</style>
+</head>
+<body>
+	<h2>入力部品(3)</h2>
+	<table>
+		<tr>
+			<th>テキストボックス</th>
+			<td><input type="text" id="input1" /></td>
+			<td><span id="tbox_result"></span></td>
+		</tr>
+		<tr>
+		<th>スライダー</th>
+			<td>
+				<input type="range" id="input2" min="1"max="10" />
+			</td>
+			<td><span id="range_result"></span></td>
+		</tr>
+		<th>テキストエリア</th>
+		<td><textarea id="point" rows="5" cols="30"placeholder="その他の要望がございましたらご記入ください"></textarea></td>
+			<td><span id="tarea_result"></span></td>
+		</tr>
+		<tr>
+			<th>ラジオボタン</th>
+			<td id="radio">
+				<input type="radio" name="drink" value="tea" />お茶
+				<input type="radio" name="drink" value="coffee" />コーヒー
+				<input type="radio" name="drink" value="wine" />お酒
+			</td>
+			<td><span id="rbtn_result"></span></td>
+			</tr>
+		<tr>
+	  	<th>チェックボックス</th>
+			<td id="checkbox">
+				<input type="checkbox" name="sweet" value="cake" />ケーキ
+				<input type="checkbox" name="sweet" value="applepie" />アップルパイ
+				<input type="checkbox" name="sweet" value="pie" />パイ
+			</td>
+			<td><span id="cbox_result"></span></td>
+		</tr>
+
+		<tr>
+			<th>メニュー（単一）</th>
+			<td>
+				<select id="menu1" name="choose1">
+					<option value="one">単品</option>
+					<option value="set">セット</option>
+				</select>
+			</td>
+			<td><span id="select1_result"></span></td>
+		</tr>
+		<tr>
+			<th>メニュー（複数）</th>
+			<td>
+				<select id="menu2" name="choose2" multiple size="3">
+					<option value="justdrink">単品：飲み物</option>
+					<option value="justsweet">単品：お菓子</option>
+					<option value="todayspecial">セット：お茶+パイ</option>
+				</select>
+			</td>	
+			<td><span id="selectm_result"></span></td>
+		</tr>
+	</table>
+
+
+</form>
+
+<script src="./js/p10-3.js"></script>
+</body>
+</html>
